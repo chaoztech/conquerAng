@@ -2,14 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { BlogpostModule } from './blogpost/blogpost.module';
+import { CmspageModule } from './cmspage/cmspage.module'
+
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BannerComponent } from './banner/banner.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
+    BlogpostModule,
+    CmspageModule,
     AppRoutingModule
   ],
   providers: [],
